@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPRA DEL ÁLBUM ("DAMN")</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/KevroFormulario.css">
+    <script type="module" src="../js/compras.js"></script>
+</head>
+<body>
+ 
+   <div class="container d-flex align-items-center justify-content-center vh-100">
+       <form class="formulariocompras" id="formulariocompras">
+           <!-- Nombre -->
+           <div class="mb-3">
+               <label for="nombre" class="form-label">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" required class="form-control">
+           </div>
+           
+           <!-- Dirección -->
+           <div class="mb-3">
+               <label for="direccion" class="form-label">Dirección:</label>
+               <textarea id="direccion" name="direccion" required class="form-control"></textarea>
+           </div>
+           
+           <!-- Método de pago -->
+           <div class="mb-3">
+               <label for="metodo_pago" class="form-label">Método de pago:</label>
+               <select id="metodo_pago" name="metodo_pago" required class="form-select">
+                   <option value="tarjeta">Tarjeta de crédito</option>
+                   <option value="paypal">PayPal</option>
+               </select>
+           </div>
+           
+           <!-- Email -->
+           <div class="mb-3">
+               <label for="email" class="form-label">Correo electrónico:</label>
+               <input type="email" id="email" name="email" required class="form-control">
+           </div>
+           
+           <!-- Botón de compra -->
+           <button type="submit" class="btn btn-danger mt-3 w-100">Comprar disco de Kendrick Lamar ("DAMN")</button>
+       </form>
+   </div>
+    
+   <footer class="text-center mt-4">
+       <p>&copy; 2024 Kevro. Todos los derechos reservados.</p>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

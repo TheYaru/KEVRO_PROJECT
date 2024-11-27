@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f4; 
+  color: #333333; 
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.profile-picture img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Estilo para el menú */
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#dropdownMenu {
+  display: none; 
+  position: absolute;
+  top: 88px; 
+  left: 0;
+  background-color: #444;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#dropdownMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdownMenu ul li {
+  margin: 10px 0;
+}
+
+#dropdownMenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#dropdownMenu ul li a:hover {
+  color: #ccc;
+}
+
+
+/* Secciones */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 60px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  padding: 30px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0D6EFD; 
+  font-weight: 600;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555; 
+}
+
+.text-tittle {
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 1.6;
+  color: #555555; 
+}
+
+/* Listas de reproducción */
+.playlist {
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.playlist h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333333; 
+  font-weight: 500;
+}
+
+.playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist ul li a {
+  color: #333333; 
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.playlist ul li a:hover {
+  color: #0D6EFD; 
+}
+
+.buttonForm {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; 
+  border-top: 1px solid #e0e0e0; 
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+  color: #888888; 
+  font-size: 14px;
+}
+
+/* Botones */
+button, .buttonForm {
+  background-color: #0D6EFD; 
+  color: #ffffff; 
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button:hover, .buttonForm:hover {
+  background-color: #0D6EFD; 
+  transform: scale(1.05); 
+}
+
+a.buttonForm {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Enlaces */
+a {
+  color: #0D6EFD; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0D6EFD; 
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .profile-picture img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #menu {
+    top: 100%;
+    left: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p, li {
+    font-size: 14px;
+  }
+
+  button, .buttonForm {
+
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;  
+  }
+  
+}
